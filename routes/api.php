@@ -16,6 +16,6 @@ Route::controller(ShopifyProxyController::class)->group(function () {
         Route::post(
             '/graphql/{storeName}',
             'processRequest'
-        )->whereIn('storeName', getAllStores());
+        );
     });
 });

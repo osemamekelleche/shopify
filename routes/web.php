@@ -10,7 +10,7 @@ Route::controller(ShopifyProxyController::class)->group(function () {
         Route::get(
             '/store/{storeName}',
             'getStoreView'
-        )->whereIn('storeName', getAllStores());
+        );
     });
 
     Route::get('/loginpage', 'getLoginView');

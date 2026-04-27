@@ -89,7 +89,7 @@ if (!function_exists('createProxySecretCookie')) {
             path: '/', // path
             secure: true, // Secure only in prod
             httpOnly: true,                     // HttpOnly
-            sameSite: null //samesite 
+            sameSite: 'lax' //samesite 
         );
     }
 }
